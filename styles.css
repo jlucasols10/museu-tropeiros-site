@@ -1,0 +1,51 @@
+:root{--brand:#4a2f16;--accent:#bf8b4a;--muted:#666}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.5;color:#222;background:#fbfbfb}
+header{height:64vh;background:linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('IMAGENS/HEADER.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;color:#fff}
+header .hero{max-width:1100px;padding:4rem;text-align:left}
+h1{font-size:clamp(1.8rem,3vw,3.2rem);margin:.2rem 0}
+p.lead{font-size:1.05rem;opacity:.95}
+
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 4%;background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:50}
+.nav-left{display:flex;gap:1rem;align-items:center}
+.brand{font-weight:700;color:var(--brand)}
+.menu{display:flex;gap:1rem}
+.menu a{color:var(--muted);text-decoration:none;font-weight:600}
+.cta{background:var(--brand);color:#fff;padding:.6rem .9rem;border-radius:8px;text-decoration:none}
+
+main{padding:3rem 6%}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem}
+.col-8{grid-column:span 8}
+.col-4{grid-column:span 4}
+
+.card{background:#fff;border-radius:12px;padding:1rem;box-shadow:0 6px 18px rgba(12,12,12,0.06)}
+
+/* Galeria responsiva */
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.galeria img{width:100%;height:160px;object-fit:cover;border-radius:8px;cursor:pointer;display:block}
+
+/* Carousel simples */
+.carousel{position:relative;overflow:hidden;border-radius:12px}
+.carousel-track{display:flex;transition:transform .5s ease}
+.carousel-slide{min-width:100%;user-select:none}
+.carousel-img{width:100%;height:380px;object-fit:cover;border-radius:8px}
+.carousel-controls{position:absolute;top:50%;left:0;right:0;display:flex;justify-content:space-between;padding:0 8px;transform:translateY(-50%)}
+.btn-small{background:rgba(255,255,255,0.85);border:none;padding:.6rem;border-radius:8px;cursor:pointer}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center;padding:2rem;visibility:hidden;opacity:0;transition:opacity .2s ease}
+.lightbox.open{visibility:visible;opacity:1}
+.lightbox img{max-width:95%;max-height:90%;border-radius:8px}
+
+/* Map */
+.map-wrapper iframe{width:100%;height:320px;border:0;border-radius:10px}
+
+/* Footer */
+footer{background:var(--brand);color:#fff;padding:2rem 6%;margin-top:2rem}
+
+/* Responsividade */
+@media (max-width:900px){.col-8{grid-column:span 12}.col-4{grid-column:span 12}.nav-left{gap:.5rem}.menu{display:none}}
+
+/* pequenas animações */
+.fade-in{animation:fadeIn .9s ease both}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}

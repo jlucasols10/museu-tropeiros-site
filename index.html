@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Museu dos Tropeiros — Ibatiba/ES</title>
+  <meta name="description" content="Museu dos Tropeiros de Ibatiba — acervo, visitas, fotos, história e programação cultural." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <div class="brand">Museu dos Tropeiros — Ibatiba</div>
+      <div class="menu">
+        <a href="#historia">História</a>
+        <a href="#acervo">Acervo</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#visitas">Visitas</a>
+      </div>
+    </div>
+    <div>
+      <a class="cta" href="#visitas">Agende sua visita</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="hero fade-in">
+      <h1>Museu dos Tropeiros de Ibatiba</h1>
+      <p class="lead">Memórias, objetos e histórias que ligam nossa cidade ao caminho dos tropeiros. Venha conhecer de perto — cultura viva, para todas as idades.</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção de destaque com carousel -->
+    <section class="grid" style="align-items:start;gap:1.25rem">
+      <div class="col-8">
+        <div class="card">
+          <div class="carousel" id="mainCarousel">
+            <div class="carousel-track">
+              <div class="carousel-slide"><img src="IMAGENS/CAROUSEL1.jpg" alt="Exposição principal" class="carousel-img"></div>
+              <div class="carousel-slide"><img src="IMAGENS/CAROUSEL2.jpg" alt="Acervo" class="carousel-img"></div>
+              <div class="carousel-slide"><img src="IMAGENS/CAROUSEL3.jpg" alt="Ambiente do museu" class="carousel-img"></div>
+            </div>
+            <div class="carousel-controls">
+              <button class="btn-small" id="prevBtn">◀</button>
+              <button class="btn-small" id="nextBtn">▶</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- História / Texto -->
+        <div class="card" style="margin-top:1rem">
+          <h2 id="historia">História do Museu</h2>
+          <p>O Museu dos Tropeiros reúne lembranças, ferramentas, arreios, fotos e documentos que contam a história dos tropeiros que cruzavam a região. O espaço foi idealizado para preservar memórias e promover educação patrimonial.</p>
+          <p>Neste site você encontra galeria, informações práticas para visitação, programação cultural e materiais para atividades escolares.</p>
+        </div>
+
+        <!-- Acervo em destaque -->
+        <div class="card" style="margin-top:1rem">
+          <h2 id="acervo">Acervo em destaque</h2>
+          <p>Castanhas, ferramentas, arreios, mapas antigos e relatos orais: cada peça tem uma história. Ao lado há uma seleção de fotos representativas — clique para ampliar.</p>
+          <div class="galeria" id="galeria">
+            <img data-src="IMAGENS/G1.jpg" src="IMAGENS/G1_thumb.jpg" alt="Peça 1" />
+            <img data-src="IMAGENS/G2.jpg" src="IMAGENS/G2_thumb.jpg" alt="Peça 2" />
+            <img data-src="IMAGENS/G3.jpg" src="IMAGENS/G3_thumb.jpg" alt="Peça 3" />
+            <img data-src="IMAGENS/G4.jpg" src="IMAGENS/G4_thumb.jpg" alt="Peça 4" />
+            <img data-src="IMAGENS/G5.jpg" src="IMAGENS/G5_thumb.jpg" alt="Peça 5" />
+            <img data-src="IMAGENS/G6.jpg" src="IMAGENS/G6_thumb.jpg" alt="Peça 6" />
+          </div>
+        </div>
+      </div>
+
+      <aside class="col-4">
+        <div class="card">
+          <h3>Visite-nos</h3>
+          <p><strong>Endereço:</strong> Praça Central — Ibatiba, ES</p>
+          <p><strong>Horário:</strong> Segunda a sexta, 8h–17h (sáb. sob agendamento)</p>
+          <p><strong>Entrada:</strong> Gratuita</p>
+          <a href="#visitas" class="cta" style="display:inline-block;margin-top:8px">Agendar visita</a>
+        </div>
+
+        <div class="card" style="margin-top:1rem">
+          <h3>Localização</h3>
+          <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps?q=Ibatiba+ES&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:1rem">
+          <h3>Próximos eventos</h3>
+          <ul>
+            <li>Roda de causos — 10 de dezembro</li>
+            <li>Oficina de encadernação histórica — 18 de janeiro</li>
+            <li>Visitas educativas para escolas — inscrição aberta</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Seção de videos e programação -->
+    <section style="margin-top:1.5rem">
+      <div class="card">
+        <h2>Vídeos e depoimentos</h2>
+        <p>Vídeos curtos com depoimentos de tropeiros locais, visitas guiadas e registros de eventos. Substitua os links pelos seus arquivos ou incorpore vídeos do YouTube.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px">
+          <div style="background:#f4f4f4;border-radius:8px;padding:8px">
+            <div style="position:relative;padding-top:56.25%"><iframe src="https://www.youtube.com/embed/VIDEO_ID" style="position:absolute;inset:0;width:100%;height:100%" title="Vídeo depoimento" frameborder="0" allowfullscreen></iframe></div>
+            <p style="margin:.5rem 0 0">Depoimento da família dos tropeiros</p>
+          </div>
+          <div style="background:#f4f4f4;border-radius:8px;padding:8px">
+            <div style="position:relative;padding-top:56.25%"><iframe src="https://www.youtube.com/embed/VIDEO_ID2" style="position:absolute;inset:0;width:100%;height:100%" title="Tour" frameborder="0" allowfullscreen></iframe></div>
+            <p style="margin:.5rem 0 0">Tour pelo acervo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulário de agendamento simples -->
+    <section id="visitas" style="margin-top:1.5rem">
+      <div class="card">
+        <h2>Agende sua Visita</h2>
+        <p>Use o formulário abaixo para solicitar uma visita guiada ou agendar a visita da sua escola. O formulário abaixo é demonstrativo — para funcionar em produção você precisará conectar a um serviço (Formspree, Google Forms, ou backend próprio).</p>
+        <form id="formVisita" onsubmit="event.preventDefault();alert('Formulário enviado (exemplo) — para envio real, conecte um serviço).');" style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+          <input required placeholder="Nome completo" />
+          <input required placeholder="E-mail" />
+          <input placeholder="Telefone" />
+          <input type="date" />
+          <textarea placeholder="Mensagem / número de pessoas" style="grid-column:span 2;min-height:90px"></textarea>
+          <button type="submit" style="grid-column:span 2;background:var(--brand);color:#fff;padding:.7rem;border-radius:8px;border:none;cursor:pointer">Enviar solicitação</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+      <div>
+        <strong>Museu dos Tropeiros — Ibatiba/ES</strong>
+        <p style="margin:.3rem 0 .6rem">Preservando memórias e promovendo cultura local.</p>
+        <small>Desenvolvido para trabalho escolar — personalize com suas fotos e informações.</small>
+      </div>
+      <div>
+        <p><strong>Contato</strong></p>
+        <p>museutropeiros@exemplo.com • (27) 9xxxx-xxxx</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox + carousel JS is loaded externally in app.js -->
+
+</body>
+</html>
